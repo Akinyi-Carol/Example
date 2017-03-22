@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hp.first.ImagesActivity"
+    tools:showIn="@layout/activity_images">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#006b54">
+
+        <Button
+            android:id="@+id/choose_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="Choose Image"
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_mybutton"
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="61dp"
+            android:layout_toEndOf="@+id/btn_mybutton"
+            android:layout_toRightOf="@+id/btn_mybutton"
+            android:visibility="gone"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
