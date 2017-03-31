@@ -7,29 +7,28 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.hp.first.MainActivity"
     tools:showIn="@layout/activity_main">
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:padding="5dp"
+        android:background="@android:color/black"
         android:orientation="vertical"
-        tools:context="com.learn2crack.opencvdemo.MainActivity">
+        tools:context=".MainActivity">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Change Brightness" />
 
-        <android.support.v7.widget.AppCompatSeekBar
-            android:id="@+id/sb_brightness"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
+
+        <Button
+            android:id="@+id/opendocument"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="Open Image" />
+
 
         <ImageView
-            android:id="@+id/iv_image"
+            android:id="@+id/image"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent" />
     </LinearLayout>
-</android.support.constraint.ConstraintLayout>
+
+  </android.support.constraint.ConstraintLayout>
